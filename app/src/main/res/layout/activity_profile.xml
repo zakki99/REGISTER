@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/White"
+    tools:context=".Profile">
+    <include
+        android:id="@+id/include"
+        layout="@layout/navbar_atas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="2dp" />
+    <TextView
+        android:id="@+id/txt_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Profile"
+        android:textColor="@color/White"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_below="@id/txt_profile"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="50dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Ini profil kamu"
+        android:textColor="@color/White" />
+
+    <ImageView
+        android:id="@+id/fotoprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/include"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/kucing" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/namaprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fotoprofile"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Bunga Citra lestari"
+        android:textColor="@color/PrimaryColor"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namaprofile"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+
+        >
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/White"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Alamat Rumah"
+            android:textAllCaps="false"
+            android:gravity="start"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:drawableEnd="@drawable/ic_back"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:drawableEnd="@drawable/ic_back"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/poppinsregular"
+            android:background="@drawable/border_text"
+            android:backgroundTint="@color/White"
+            android:text="Edit Password"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:gravity="start"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:drawableEnd="@drawable/ic_back"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/White"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Logout"
+            android:textAllCaps="false"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:gravity="start"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp" />
+
+        <TextView
+            android:id="@+id/edit_profile"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/White"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Edit Profile"
+            android:textAllCaps="false"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:gravity="start"
+            android:textSize="16sp"
+            android:layout_marginStart="20dp"
+            android:drawableEnd="@drawable/ic_back" />
+
+        <TextView
+            android:drawableEnd="@drawable/delete"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/border_text"
+            android:backgroundTint="@color/White"
+            android:outlineAmbientShadowColor="@color/SecondaryColor"
+            android:text="Hapus Akun"
+            android:paddingLeft="10dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:gravity="start"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppinsregular"/>
+    </LinearLayout>
+</RelativeLayout>
+
